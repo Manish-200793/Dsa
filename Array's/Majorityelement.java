@@ -2,7 +2,7 @@ import java.util.*;
 class Majorityelement{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter the size:");
+        System.out.println("enter the size:");                   
         int n=sc.nextInt();
         System.out.println("enter "+n+" elements");
         int[] nums=new int[n];
@@ -22,7 +22,20 @@ class Majorityelement{
                 freq--;
             }
         }
+        int count=0;
+        for(int i=0;i<n;i++){
+            if(nums[i]==ans){
+                count++;
+            }
+        }
+        if(count>n/2){
+            System.out.println(ans);
+        }
+        else{
+            System.out.println("no majority element");
+        }
+
         sc.close();
-        System.out.println(ans);
+        
     }
 }
