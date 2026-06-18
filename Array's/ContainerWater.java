@@ -34,5 +34,6 @@ public class ContainerWater {
         solution sol=new solution();
         int max=sol.area(height);
         System.out.println("The maximum area is : "+max);
+        sc.close();
     }
 }
