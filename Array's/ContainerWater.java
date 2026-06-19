@@ -17,7 +17,6 @@ class solution {
         }
         return max_area;
     }
-    
 }
 
 public class ContainerWater {
